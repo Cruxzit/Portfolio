@@ -175,12 +175,6 @@ export default function App() {
             transition={{ delay: 1, duration: 1 }}
             className="absolute bottom-12 left-1/2 -translate-x-1/2"
           >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-            >
-              <ChevronDown className="w-8 h-8 text-gray-500" />
-            </motion.div>
           </motion.div>
         </div>
       </section>
