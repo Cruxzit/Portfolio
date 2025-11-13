@@ -29,49 +29,48 @@ export default function App() {
   }, []);
 
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack shopping experience with real-time inventory",
-      tags: ["React", "Node.js", "MongoDB"],
-      gradient: "from-blue-500 to-cyan-500",
-      size: "large"
-    },
-    {
-      title: "AI Chat Bot",
-      description: "Intelligent conversational assistant",
-      tags: ["Python", "TensorFlow", "NLP"],
-      gradient: "from-purple-500 to-pink-500",
-      size: "medium"
-    },
-    {
-      title: "Task Manager",
-      description: "Productivity app with collaboration features",
-      tags: ["Vue.js", "Firebase"],
-      gradient: "from-orange-500 to-red-500",
-      size: "medium"
-    },
-    {
-      title: "Portfolio CMS",
-      description: "Content management for creative professionals",
-      tags: ["Next.js", "Strapi"],
-      gradient: "from-green-500 to-emerald-500",
-      size: "large"
-    },
-    {
-      title: "Weather App",
-      description: "Beautiful weather forecasts",
-      tags: ["React Native", "API"],
-      gradient: "from-indigo-500 to-blue-500",
-      size: "small"
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Real-time data visualization",
-      tags: ["D3.js", "Express"],
-      gradient: "from-yellow-500 to-orange-500",
-      size: "small"
-    }
-  ];
+  {
+    title: "Mestre Cuca",
+    description: "Full-stack recipe website with dynamic search and content management",
+    tags: ["React", "Node.js", "MySQL"],
+    gradient: "from-blue-500 to-cyan-500",
+    image: "/projects/mestre-cuca.png", // Adiciona a tua imagem aqui
+    link: "https://mestrecuca.com" // Adiciona o link do projeto
+  },
+  {
+    title: "PocketList",
+    description: "Mobile app for managing personal tasks and shopping lists with real-time sync",
+    tags: ["React Native"],
+    gradient: "from-purple-500 to-pink-500",
+    image: "/projects/pocketlist.png",
+    link: "https://pocketlist.app"
+  },
+  {
+    title: "ExploreMundo",
+    description: "Full-stack travel website with destination search and content management",
+    tags: ["React", "Node.js", "MySQL"],
+    gradient: "from-orange-500 to-red-500",
+    image: "/projects/exploremundo.png",
+    link: "https://exploremundo.com"
+  },
+  {
+    title: "TJM Tech Store Website",
+    description: "Company website built with WordPress, including design, structure and content",
+    tags: ["WordPress", "HTML", "CSS"],
+    gradient: "from-green-500 to-emerald-500",
+    image: "/projects/tjm-tech.png",
+    link: "https://tjmtech.com"
+  },
+  {
+    title: "n8n Chatbot",
+    description: "Automated chatbot integrated with external services for intelligent responses",
+    tags: ["n8n", "PostgreSQL"],
+    gradient: "from-indigo-500 to-blue-500",
+    image: "/projects/n8n-chatbot.png",
+    link: "https://github.com/yourname/n8n-chatbot"
+  }
+];
+
 
   const skills = [
     { name: "Frontend", icon: Code2, items: ["React", "Vue", "TypeScript", "Tailwind CSS"] },
@@ -96,7 +95,7 @@ export default function App() {
             className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Portfolio
+            Hugo Oliveira
           </motion.div>
           <div className="hidden md:flex gap-8 items-center">
             <a href="#about" className="text-gray-300 hover:text-indigo-400 transition-colors font-medium">About</a>
@@ -120,26 +119,25 @@ export default function App() {
             transition={{ duration: 0.8 }}
           >
             <motion.div 
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full shadow-md mb-6 border border-white/20"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <Sparkles className="w-4 h-4 text-yellow-400" />
-              <span className="text-sm font-medium text-gray-200">Available for new projects</span>
             </motion.div>
 
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-              <span className="block text-white">Creative</span>
+              <span className="block text-white">Full Stack</span>
               <span className="block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Developer
               </span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Crafting beautiful digital experiences with clean code and thoughtful design. 
-              Turning ideas into reality, one pixel at a time.
+              Building complete web and mobile applications with clean code and responsive design.
+              Turning ideas into functional and engaging experiences, from the frontend to the backend.
             </p>
+
+            
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:shadow-2xl hover:shadow-indigo-500/50 transition-all text-lg px-8 py-6">
@@ -187,19 +185,20 @@ export default function App() {
               </h2>
               <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  I'm a passionate full-stack developer with a keen eye for design and a love for creating 
-                  seamless user experiences. With over 5 years of experience, I've worked with startups 
-                  and enterprises to bring their visions to life.
+                  I'm an enthusiastic full-stack developer with a passion for building complete web and mobile applications. 
+                  I enjoy working on both frontend and backend, creating responsive interfaces, reusable components, 
+                  and seamless user experiences.
                 </p>
                 <p>
-                  My approach combines technical expertise with creative problem-solving, ensuring every 
-                  project not only works flawlessly but also delights users.
+                  My approach combines technical skills with problem-solving and creativity, integrating databases, APIs, 
+                  and automation tools to deliver functional and efficient software.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source, 
-                  or sharing knowledge with the developer community.
+                  Outside of development, I like exploring new technologies, participating in personal projects, and 
+                  preparing to take part in hackathons to challenge myself and grow as a developer.
                 </p>
               </div>
+
               <div className="flex gap-4 mt-8">
                 <Button variant="outline" size="icon" className="bg-white/5 border-white/20 text-white hover:bg-white/10">
                   <Github className="w-5 h-5" />
@@ -214,16 +213,16 @@ export default function App() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1">
-                <div className="w-full h-full rounded-3xl bg-gray-900 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Code2 className="w-24 h-24 mx-auto text-gray-500 mb-4" />
-                    <p className="text-gray-400 text-sm">Your photo here</p>
-                  </div>
+                <div className="w-full h-full rounded-3xl bg-gray-900 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/foto_CV.png" 
+                    alt="Hugo Oliveira" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-indigo-600 to-purple-600 p-6 rounded-2xl shadow-xl border border-indigo-500/50">
-                <div className="text-4xl font-bold text-white">5+</div>
-                <div className="text-sm text-indigo-100">Years Experience</div>
+                <div className="text-base text-indigo-100">Looking for an Internship</div>
               </div>
             </div>
           </motion.div>
@@ -271,9 +270,9 @@ export default function App() {
         </div>
       </section>
 
-      {/* Projects Section - Bento Grid */}
+      {/* Projects Section */}
       <section id="projects" className="py-32 px-6 relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -284,40 +283,61 @@ export default function App() {
             <p className="text-xl text-gray-300">A selection of my recent work</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[240px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`${
-                  project.size === 'large' ? 'md:col-span-2 md:row-span-2' : 
-                  project.size === 'medium' ? 'md:col-span-1 md:row-span-2' : 
-                  'md:col-span-1 md:row-span-1'
-                }`}
               >
-                <Card className="group h-full relative overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300 border-2 hover:border-indigo-200">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-90 group-hover:opacity-100 transition-opacity`} />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between text-white z-10">
-                    <div>
-                      <div className="flex items-start justify-between mb-4">
-                        <h3 className="text-2xl md:text-3xl font-bold">{project.title}</h3>
-                        <ExternalLink className="w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  <Card className="group h-full bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-300 rounded-2xl overflow-hidden cursor-pointer">
+                    <div className="p-6">
+                      <div className={`rounded-xl h-32 mb-4 flex items-center justify-center bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-opacity relative overflow-hidden`}>
+                        {project.image ? (
+                          <>
+                            <img 
+                              src={project.image} 
+                              alt={project.title}
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling.style.display = 'flex';
+                              }}
+                            />
+                            <div className="hidden absolute inset-0 items-center justify-center">
+                              <ExternalLink className="w-12 h-12 text-white/80" />
+                            </div>
+                          </>
+                        ) : (
+                          <ExternalLink className="w-12 h-12 text-white/80" />
+                        )}
+                        <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <ExternalLink className="w-4 h-4 text-white" />
+                        </div>
                       </div>
-                      <p className="text-white/90 text-lg mb-4">{project.description}</p>
+                      <h3 className="text-lg font-medium text-white mb-2 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
+                      <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map(tag => (
+                          <span 
+                            key={tag} 
+                            className="px-2 py-1 rounded text-xs bg-white/5 text-gray-400 border border-white/10"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map(tag => (
-                        <Badge key={tag} className="bg-white/20 hover:bg-white/30 text-white border-white/30">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
-                </Card>
+                  </Card>
+                </a>
               </motion.div>
             ))}
           </div>
